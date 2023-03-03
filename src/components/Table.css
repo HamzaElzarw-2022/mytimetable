@@ -1,0 +1,58 @@
+.info {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #516fd1;
+    color: white;
+}
+.number {
+    color: rgb(242, 255, 0);
+    font-weight: bold;
+    font-size: 18px;
+}
+.table {
+    height: 550px;
+    margin: 50px auto;
+    width: 70%;
+    min-width: 500px;
+    
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    box-shadow: 0px 0px 15px #002ab6;
+}
+.column {
+    height: 100%;
+    background-color: rgb(230, 231, 255);
+    flex: 1;
+}
+.mcolumn {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.blockBorder {
+    border-bottom: 5px solid rgb(255, 255, 255); /*---------*/
+}
+.block {
+    background-color: #1c3071;
+    color: white;
+    height: 27.9px; /*-------------------------*/
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.divider2 {
+    background-color: rgb(255, 255, 255);
+    width:5px;
+    height: 100%;
+}
+.lecture {
+    background-color: #cacaca;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0px 3px;
+    font-size: 14px;
+}

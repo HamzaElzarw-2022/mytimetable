@@ -1,38 +1,156 @@
 .App {
-  text-align: center;
+    font-family: monospace;
+    min-width: 500px;
+}
+.titleBar {
+    font-size: 25px;
+    /* background: #443C68; */
+    height: 60px;
+    /* color: white; */
+    line-height: 60px;
+    padding-left: 20px;
+    text-align: center;
+}
+.title {
+    font-family: monospace;
+}
+.divider {
+    height: 1.5px;
+    background-image: linear-gradient(90deg,rgba(0,0,0,0.00) 0%,#000000 10%,rgba(0,0,0,0.00) 150%);
+    opacity: .2;
+}
+.courseContainer {
+    max-width: 750px;
+    margin: auto;
+}
+.course {
+    background-color: #dadada;
+    width: 70%;
+    margin:  20px auto 0px auto;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.label {
+    position: relative;
+    top: -20px;
+    left: -20px;
+    background-color: #575757;
+    width: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.zero {
+    height: 0px;
+}
+.removeSection {
+
+    top: -13px;
+    left: 96%;
+    width: 20px;
+    padding-top: 1px;
+    height: 20px;
+    font-size: 13px;
+}
+.removeCourse {
+    top: -88px;
+    left: 84.5%;
+    width: 25px;
+    height: 25px;
+    padding-top: 2px;
+    font-size: 16px;
+}
+.remove {
+    position: relative;
+    background-color: #843333;
+    padding-left: 1px;
+    text-align: center;
+    border-radius: 20px;
+    user-select: none;
+    margin: 0px;
+}
+.remove:hover {
+    animation: shakeRemove 1s;
+}
+@keyframes shakeRemove {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(15deg); }
+    20% { transform: rotate(0deg); }
+    30% { transform: rotate(-15deg); }
+    40% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-15deg); }
+    80% { transform: rotate(0deg); }
+    90% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
+.secLabel {
+    background-color: #1c3071;
+}
+.section {
+    background-color: #bababa;
+    border-radius: 15px;
+    padding: 15px;
+    margin:  20px auto 0px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sec {
+    display: flex;
+    margin: 2px 0px;
+}
+.secItem {
+    /* flex-basis: 50%; */
+    width: 50%;
+    font-size: 16px;
+}
+.secOption {
+    font-size: 16px;
+    flex-basis: 51%;
+}
+.submitBtn {
+    background-color: #1c3071;
+    color: white;
+    width: 70%;
+    max-width: 525px;
+    margin:  20px auto 20px auto;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+.filter {
+    max-width: 525px;
+    background-color: #516fd1;
+    color: white;
+
+}
+.filterTitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hint {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+    font-weight: bold;
+}
+.btn:active {
+    background-color: #a4a4a4;
+}
+.btn:hover {
+    animation: shake 0.4s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-2deg); }
+    100% { transform: rotate(0deg); }
 }
