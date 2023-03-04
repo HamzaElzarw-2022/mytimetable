@@ -28,6 +28,7 @@ export default function App() //------------------------------------------------
       <Filter />
       <Submit makeTimetables={makeTimetables} />
       {tableState}
+      <footer className="footer"></footer>
     </div>
   );
 }
